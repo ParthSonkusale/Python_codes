@@ -11,9 +11,9 @@ p = Poly(exp , x)#this use for convert math expression into polynomial
 for power , coeff in p.terms(): #p.terms() = ((power,),coeff) of the polynomial equation
 #   for i in range(der):
         if power[0] == 0:
-            print(f"{coeff} -> 0")
+            print("derivative of",f"{coeff} is 0")
         else:
             n_coeff = power[0] * coeff
             n_power = power[0] - 1 # power = tuplet = (x,) so we extract the x by power[0]
-            print(f"{coeff}*x**{power[0]} -> {n_coeff}*x**{n_power}" )
+            print("derivative of",f"{coeff}*x**{power[0]} is {n_coeff}*x**{n_power}" )
 
