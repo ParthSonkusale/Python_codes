@@ -1,12 +1,9 @@
-    
-def datatype(x):
-    if isinstance(x , (int , float)):
-        print("Who ate the last cookie? It was Monica!")
-    elif isinstance(x , str):
-        print("Who ate the last cookie? It was Zach!")
+def cookie(x):
+    if isinstance(x, str):
+        return "Who ate the last cookie? It was Zach!"
+    elif isinstance(x, bool):
+        return "Who ate the last cookie? It was the dog!"
+    elif isinstance(x, (int, float)):
+        return "Who ate the last cookie? It was Monica!"
     else:
-        print("Who ate the last cookie? It was the dog!")
-        
-        
-        
-        
+        return "Who ate the last cookie? It was the dog!"
